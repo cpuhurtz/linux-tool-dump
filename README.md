@@ -13,3 +13,4 @@
 - [ULTRAVIOLENCE](./ULTRAVIOLENCE/README.md) is a simple implant capable of standard `cd`, `put`, `get` and `execute`. Developed in less than 20 minutes by the wicked wizard `raskov`.
     * The client is responsible for receiving a "callback" from ULTRAVIOLENCE implant.
     * Once the session is established, client assumes command and control over the target with aforementioned four functions.
+    * The generator builds each ULTRAVIOLENCE implant, accepting two configuration options: IP and PORT to callback to.
