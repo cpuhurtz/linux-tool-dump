@@ -14,3 +14,8 @@
     * The client is responsible for receiving a "callback" from ULTRAVIOLENCE implant.
     * Once the session is established, client assumes command and control over the target with aforementioned four functions.
     * The generator builds each ULTRAVIOLENCE implant, accepting two configuration options: IP and PORT to callback to.
+
+# TODO
+
+- Categorize the tools found here for easier navigation.
+- Use tool-specific README files to elaborate on usage, OPSEC considerations, and build procedure(s).
