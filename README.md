@@ -1,6 +1,6 @@
 # linux-tool-dump
 
-- FRACTALHAMMER
+- [FRACTALHAMMER](./FRACTALHAMMER/README.md) is an extensive, Linux-focused keylogger. Developed by someone I'll refer to as "KVM."
 
 - [GORENEST](./GORENEST/README.md) is one part "client", one part "implant", one part "generator." Developed in less than 10 minutes by the wicked wizard `raskov`.
     * TL;DR - receive, decrypt, execute a binary. Does not touch the target filesystem.
@@ -9,7 +9,13 @@
     * The generator builds each GORENEST implant, accepting one configuration option: which port to listen on.
 
 - GREENPHOSPHOR
+
 - RETROSAMURAI
+
+- [shr0ud](./shr0ud/README.md) is a trojanized variant of `netstat`. Developed by yours truly.
+    * It's intended to replace the common admin utility `/usr/bin/netstat`.
+    * Features a listener that receives a crafted UDP packet to dynamically `set` or `remove` "filters."
+    * Said filters are designed to remove certain `netstat` results from appearing in the output.
 
 - [SPINALTAP](./SPINALTAP/README.md) is a work-in-progress, intended to be a trojanized variant of `sshd` which intercepts password credentials. Developed by yours truly.
     * Details to be added here at a later time.
@@ -24,5 +30,6 @@
 
 # TODO
 
+- Upload other tools (as long as I can still find them).
 - Categorize the tools found here for easier navigation.
 - Use tool-specific README files to elaborate on usage, OPSEC considerations, and build procedure(s).
