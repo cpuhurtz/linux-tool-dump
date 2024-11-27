@@ -1,6 +1,12 @@
 # linux-tool-dump
 
+- [disrup7](./disrup7/README.md) is a super simple LKM which leverages Net Filters and their respective function callbacks to drop some pre-defined percentage of all traffic.
+    * This LKM makes no effort in hiding itself; once remotely deployed, good luck regaining access to the box.
+
+- [ETHERDRUNK](./ETHERDRUNK/README.md)
+
 - [FRACTALHAMMER](./FRACTALHAMMER/README.md) is an extensive, Linux-focused keylogger. Developed by someone I'll refer to as "KVM."
+    * Code needs to be revamped slightly (and tested) before being committed. Currently has three versions w/ differing features.
 
 - [GORENEST](./GORENEST/README.md) is one part "client", one part "implant", one part "generator." Developed in less than 10 minutes by the wicked wizard `raskov`.
     * TL;DR - receive, decrypt, execute a binary. Does not touch the target filesystem.
@@ -12,7 +18,11 @@
 
 - [REDPHOSPHOR](./REDPHOSPHOR/README.md) is ... 
 
-- [RETROSAMURAI](./RETROSAMURAI/README.md) is ...
+- [RETROSAMURAI](./RETROSAMURAI/README.md) is an implant designed to intercept outbound application traffic and stain valid sessions with identifiable exfil data.
+    * Doing this in usermode is possible through `iptables` NFQUEUE or REDIRECT; traffic is proxy'd to `mitmproxy` or a program handling NFQueue structs.
+    * Second part of RETROSAMURAI are the ALLEYWAYs: sensors placed on hosts within the same transmission/broadcast domain that would be able to detect the stain(s).
+    * ALLEYWAY sensors handle bundling & exfil back to C2.
+    * Enables strategic collection across disparate hosts.
 
 - [shr0ud](./shr0ud/README.md) is a trojanized variant of `netstat`. Developed by yours truly.
     * It's intended to replace the common admin utility `/usr/bin/netstat`.
