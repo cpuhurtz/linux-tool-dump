@@ -8,9 +8,11 @@
     * The implant listens on said port. Received traffic is interpreted as a binary destined for decrypt-and-execute.
     * The generator builds each GORENEST implant, accepting one configuration option: which port to listen on.
 
-- GREENPHOSPHOR
+- [GREENPHOSPHOR](./GREENPHOSPHOR/README.md) is ...
 
-- RETROSAMURAI
+- [REDPHOSPHOR](./REDPHOSPHOR/README.md) is ... 
+
+- [RETROSAMURAI](./RETROSAMURAI/README.md) is ...
 
 - [shr0ud](./shr0ud/README.md) is a trojanized variant of `netstat`. Developed by yours truly.
     * It's intended to replace the common admin utility `/usr/bin/netstat`.
@@ -26,7 +28,7 @@
     * Once the session is established, client assumes command and control over the target with aforementioned four functions.
     * The generator builds each ULTRAVIOLENCE implant, accepting two configuration options: IP and PORT to callback to.
 
-- WHITEPHOSPHOR
+- [WHITEPHOSPHOR](./WHITEPHOSPHOR/README.md) is ...
 
 # TODO
 
