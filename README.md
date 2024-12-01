@@ -1,7 +1,7 @@
 # linux-tool-dump
 
 - [disrup7](./disrup7/README.md) is a super simple LKM which leverages Net Filters and their respective function callbacks to drop some pre-defined percentage of all traffic.
-    * This LKM makes no effort in hiding itself; once remotely deployed, good luck regaining access to the box.
+    * This LKM makes no effort in hiding itself. It is non-persistent. Once remotely deployed, good luck regaining access to the box.
 
 - [ETHERDRUNK](./ETHERDRUNK/README.md)
 
@@ -18,7 +18,7 @@
 
 - [REDPHOSPHOR](./REDPHOSPHOR/README.md) is ... 
 
-- [RETROSAMURAI](./RETROSAMURAI/README.md) is an implant designed to intercept outbound application traffic and stain valid sessions with identifiable exfil data.
+- [RETROSAMURAI](./RETROSAMURAI/README.md) is an implant designed to intercept outbound application traffic and stain valid sessions with identifiable exfil data. Developed by yours truly.
     * Doing this in usermode is possible through `iptables` NFQUEUE or REDIRECT; traffic is proxy'd to `mitmproxy` or a program handling NFQueue structs.
     * Second part of RETROSAMURAI are the ALLEYWAYs: sensors placed on hosts within the same transmission/broadcast domain that would be able to detect the stain(s).
     * ALLEYWAY sensors handle bundling & exfil back to C2.
@@ -43,5 +43,5 @@
 # TODO
 
 - Upload other tools (as long as I can still find them).
-- Categorize the tools found here for easier navigation.
+- Categorize the tools found here for easier repo navigation.
 - Use tool-specific README files to elaborate on usage, OPSEC considerations, and build procedure(s).
