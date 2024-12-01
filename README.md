@@ -8,7 +8,7 @@
 - [FRACTALHAMMER](./FRACTALHAMMER/README.md) is an extensive, Linux-focused keylogger. Developed by someone I'll refer to as "KVM."
     * Code needs to be revamped slightly (and tested) before being committed. Currently has three versions w/ differing features.
 
-- [GORENEST](./GORENEST/README.md) is one part "client", one part "implant", one part "generator." Developed in less than 10 minutes by the wicked wizard `raskov`.
+- [GORENEST](./GORENEST/README.md) is one part "client", one part "implant", one part "generator." Developed in less than 10 minutes by the wicked wizard [raskov](https://github.com/v1k1ngspl01ts).
     * TL;DR - receive, decrypt, execute a binary. Does not touch the target filesystem.
     * The client is responsible for encrypting and sending traffic to a pre-designated IP-PORT pair.
     * The implant listens on said port. Received traffic is interpreted as a binary destined for decrypt-and-execute.
@@ -33,7 +33,7 @@
     * Details to be added here at a later time.
     * Credential harvesting is finished, but still needs to be transmitted back to C2.
 
-- [ULTRAVIOLENCE](./ULTRAVIOLENCE/README.md) is a simple implant capable of standard `cd`, `put`, `get` and `execute`. Developed in less than 20 minutes by the wicked wizard `raskov`.
+- [ULTRAVIOLENCE](./ULTRAVIOLENCE/README.md) is a simple implant capable of standard `cd`, `put`, `get` and `execute`. Developed in less than 20 minutes by the wicked wizard [raskov](https://github.com/v1k1ngspl01ts).
     * The client is responsible for receiving a "callback" from ULTRAVIOLENCE implant.
     * Once the session is established, client assumes command and control over the target with aforementioned four functions.
     * The generator builds each ULTRAVIOLENCE implant, accepting two configuration options: IP and PORT to callback to.
